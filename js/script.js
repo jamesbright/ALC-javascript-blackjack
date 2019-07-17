@@ -8,7 +8,7 @@
 let suits = ['Hearts', 'Clubs', 'Diamonds', 'Spades'],
     values = ['Ace', 'King', 'Queen', 'Jack', 
     '10', '9', '8', '7', '6',
-    '5', '4', '3', '2'];s
+    '5', '4', '3', '2'];
 
     // map access to svg card files
 let svg_cards=[

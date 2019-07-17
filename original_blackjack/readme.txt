@@ -1,0 +1,1 @@
+This course's demo projects consist of the final Blackjack source code for each course module.  Watch the introduction to see how to copy and paste this code into a Plunk.

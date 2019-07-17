@@ -1,0 +1,370 @@
+
+body{
+    background: url('../img/bg2.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   color: moccasin;
+}
+header a{
+    text-align: right;
+}
+.card-box{
+    position: relative;
+top: 100px;
+margin-right:20px;
+border:2;
+text-align: center;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+
+button{
+    font-size: 40px;
+    margin: 5px;
+    border: 2px;
+    border-radius: 20px;
+    border-style: ridge;
+    border-color:brown;
+    background: none;
+    color: moccasin;
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+}
+
+@keyframes movexy{
+ 
+  
+   
+   50% {
+    transform: rotateX(-50deg);
+    transform: rotateY(-50deg);
+    transform: rotateZ(-150deg);
+}
+30% {
+    
+    transform: translateX(-50%);
+    transform: translateY(-20%);
+}
+ 
+}
+.card-box .svg-card {
+transform: rotate(-3deg);
+animation: movexy 4s 1s ease 1;
+}
+
+#text-area{
+    text-align: center;
+    
+   margin-top: 7%;
+   font-size: 50px;
+}
+#players-box{
+   margin-top: 5%;
+   font-size: 55px;
+   padding-bottom: 20px;
+}
+div #dealer{
+    text-align: center;
+    float:left;
+    width: 35%;
+    border: 2px;
+    border-style:dashed;
+    border-width:2;
+    border-color: darkslategray;
+    margin-left: 5%;
+    background: url('../img/bg4.jpg');
+    color: wheat;
+
+    
+}
+div #info{
+    color:green;
+   position: absolute;
+   left:45%;
+   margin: 5px;
+               }
+
+div #player{
+    text-align: center;
+    float:right;
+    width:35%;
+    border: 2px;
+    border-style:dashed;
+    border-width:2;
+    border-color: darkslategray;
+    margin-right: 5%;
+    background: url('../img/bg4.jpg');
+    color: wheat;
+   
+        }
+#end-rule{
+    margin-bottom: 0px;
+}
+
+
+
+#winner{
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  font-size: 60px;
+
+}
+
+.stack {
+	position: relative;
+	margin-top: 50vh;
+	margin-left: 50vw;
+	transform: translate(-50%,-50%);
+	width: 340px;
+	height: 440px;
+}
+.card-right{
+	background-color: white;
+	background: linear-gradient(to bottom, rgba(235,236,240,1) 0%,rgba(255,255,255,1) 60%);
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	position: absolute;
+	transform: translateY(0);
+	animation: onTop-right 12s 2s ease infinite;
+	box-shadow: 4px 4px 8px rgba(180,181,185,.5)
+}
+.card-left{
+	background-color: white;
+	background: linear-gradient(to bottom, rgba(235,236,240,1) 0%,rgba(255,255,255,1) 60%);
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	position: absolute;
+	transform: translateY(0);
+	animation: onTop-left 12s 2s ease infinite;
+	box-shadow: 4px 4px 8px rgba(180,181,185,.5)
+}
+.card.one {
+	left: 0;
+	top: 0;
+	z-index: 2;
+	animation-name: onTop;
+}
+.card.two {
+	left: 20px;
+	top: 20px;
+	z-index: 1;
+	animation-name: onMiddle;
+}
+.card.three {
+	left: 40px;
+	top: 40px;
+	z-index: 0;
+	animation-name: onBottom;
+}
+.card span {
+	font-size: 24px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+@keyframes onTop-left {
+  5% {
+    transform: translateY(-300px);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 40px;
+    top: 40px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 40px;
+    top: 40px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+}
+@keyframes onTop-right {
+  5% {
+    transform: translateY(-300px);
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+  }
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    right: 40px;
+    top: 40px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 0;
+    right: 40px;
+    top: 40px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 2;
+    right: 0;
+    top: 0;
+  }
+}
+
+
+@keyframes onTop {
+  5% {
+    transform: translateY(300px);
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+  }
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    right: 40px;
+    top: 40px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 0;
+    right: 40px;
+    top: 40px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 1;
+    left: -20px;
+    top: 20px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 1;
+    right: 20px;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 2;
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes onMiddle {
+  10% {
+    transform: translateY(0);
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  45% {
+    transform: translateY(-300px);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 40px;
+    top: 40px;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 40px;
+    top: 40px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+}
+@keyframes onBottom {
+  10% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 20px;
+    top: 20px;
+  }
+  40% {
+    transform: translateY(0);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  50% {
+    transform: translateY(0);
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  70% {
+    transform: translateY(0);
+    z-index: 2;
+    left: 0;
+    top: 0;
+  }
+  75% {
+    transform: translateY(-300px);
+    z-index: 1;
+    left: 20px;
+    top: 20px;
+  }
+  80% {
+    transform: translateY(0);
+    z-index: 0;
+    left: 40px;
+    top: 40px;
+  }
+}

@@ -14,7 +14,7 @@ top: 100px;
 margin-right:20px;
 border:2;
 text-align: center;
-
+background:black;
 }
 a{
     text-decoration: none;
@@ -69,6 +69,7 @@ animation: movexy 4s 1s ease 1;
    margin-top: 5%;
    font-size: 55px;
    padding-bottom: 20px;
+  background: url('../img/bg2.jpg');
 }
 div #dealer{
     text-align: center;
